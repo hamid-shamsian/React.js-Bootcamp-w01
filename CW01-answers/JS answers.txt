@@ -1,0 +1,42 @@
+Q1:
+    a)
+	const userName; //'let' must be used if the value is supposed to be changed.
+	const PI;
+	const RED_HEX_CODE; 
+	const GOOGLE_URL;
+	const USER_ID;
+
+    b)
+	1-string
+	2-number
+	3-string
+	4-bigInt
+	5-number
+	6-number
+	7-object
+
+    c)
+	1- it will trigger TypeError: Assignment to constant variable.
+	   if we change the const to let, then the output will be 4.
+	2- NaN
+	3- 0
+    d)
+	let is block scope but var is global scope.
+	var definitions will be hoisted when compiling but let wont.
+	var can be redeclared but let cant.
+
+	
+Q2: (custom question posed by mentor)
+
+const firstName = prompt("plz enter your first name");
+const birthYear = prompt("plz enter your birth year");
+const currentYear = new Date().getFullYear();
+let age = currentYear - birthYear;
+alert(`Hello ${firstName}. you are ${age} years old!`);
+
+
+Q3: (custom question posed by mentor)
+
+let number = prompt("enter a number");
+number = Number(number);
+console.log(-number, number ** 10, Boolean(number), typeof number);
